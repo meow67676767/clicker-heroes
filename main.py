@@ -1,4 +1,5 @@
 #pgzero
+import pgzrun
 
 WIDTH = 600
 HEIGHT = 400
@@ -21,8 +22,8 @@ button_menu_2 = Actor('bonus', (300, 350))
 enemy_gallery = Actor('enemy', (150, 80))
 enemy_2 = Actor('enemy_2', (280, 80))
 enemy_3 = Actor('enemy_3', (450, 80))
-enemy_4 = Actor('enemy_6', (220, 230))
-enemy_5 = Actor('enemy_7', (400, 230))
+enemy_4 = Actor('enemy_4', (220, 230))
+enemy_5 = Actor('enemy_5', (400, 230))
 
 # Переменные
 count = 0
@@ -132,3 +133,5 @@ def on_mouse_down(button, pos):
             mode = 'menu'
         elif button_menu_2.collidepoint(pos):
             mode = 'menu'
+
+pgzrun.go()
